@@ -1,7 +1,7 @@
 ---
 title: Building Alternatives
 type: Workshop
-location: Intergrated Conference, Antwerp, BE
+location: Integrated Conference, Antwerp, BE
 subtext: as part of Evening Class
 dateFormat: # "year", otherwise will be displayed MM.YYYY
 dateEnd: 2019-11-05
