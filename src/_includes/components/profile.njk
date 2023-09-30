@@ -6,9 +6,9 @@
   <section class="section prose">
    
     <h2>About</h2>
-
+    <div class="indented">
     {{ profile.content | safe }}
-
+    </div>
   </section>
 {% endif %}
 
@@ -17,7 +17,7 @@
   <section class="section section--contact prose">
 
     <h2>Contact</h2>
-
+    <div class="indented">
     {% if profile.email %}
       <p><a href="mailto:{{ profile.email }}">{{ profile.email }}</a></p>
     {% endif %}
@@ -29,11 +29,11 @@
         {%- endfor -%}
       </ul>
     {% endif %}
-
+    </div>
   </section>
 {% endif %}
 
-{# Section: Current and upcoming activity #}
+{# Section: Current and upcoming activity 
 {% if collections.activityCurrent.length %}
   <section class="section prose">
 
@@ -45,14 +45,12 @@
       {% endfor %}
     </ul>
   </section>
-{% endif %}
+{% endif %}#}
 
 {# Section: Previous activity #}
 {% if collections.activityPast.length %}
   <section class="section prose">
-
     <h2>Previously</h2>
-
     <ul class="activities">
       {% for a in collections.activityPast %}
         {% include "components/activity-item.njk" %}
@@ -82,13 +80,13 @@
   <section class="section prose">
 
     <h2>Recent work</h2>
-
+    <div class="indented">
     <ul>
       {% for item in profile.workList %}
         <li>{% if item.url %}<a href="{{ item.url }}">{{ item.text }}</a>{% else %}{{ item.text }}{% endif %}</li>
       {% endfor %}
     </ul>
     <small>Full portfolio available on request</small>
-
+    </div>
   </section>
 {% endif %}

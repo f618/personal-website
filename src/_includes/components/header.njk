@@ -22,20 +22,4 @@
       {% include "components/nav-link.njk" %}
     </h1>
   {%- endif -%}
-  <nav class="nav">
-    <ul class="nav__list">
-      <li class="nav__item nav__item--thinking">
-        {% set linkUrl = '/arena/' %}
-        {% set linkText = 'Arena' %}
-        {% set current = section == 'arena' %}
-        {% include "components/nav-link.njk" %}
-      </li>
-      {#<li class="nav__item nav__item--projects">
-        {% set linkUrl = '/projects/' %}
-        {% set linkText = 'projects' %}
-        {% set current = section == 'projects' or section == 'post' %}
-        {% include "components/nav-link.njk" %}{% if tag %}<span class="color-grey"> &mdash; </span>{{ tag }}{% endif %}
-      </li>#}
-    </ul>
-  </nav>
 </header>
