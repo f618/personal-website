@@ -4,7 +4,7 @@
   margin-bottom: 1.625rem;
   padding-bottom: var(--gutter);
   padding-top: var(--gutter);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .header--desktop,
@@ -31,9 +31,9 @@
 .header--site > * {
   margin-left: calc(var(--gutter) * -1);
 }
+
 .header--site .nav > * {
   margin-right: 0;
-  
 }
 
 .header--site .nav {
@@ -42,7 +42,7 @@
 }
 
 .nav__list {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   display: flex;
   justify-content: space-between;
 }
@@ -70,7 +70,7 @@
 }
 
 .site-title {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: inherit;
   font-weight: bold;
   line-height: inherit;
@@ -122,7 +122,7 @@
 }
 
 .button--skip:focus {
-  border: 1px solid color(--color-1);
+  border: 1px solid var(--color-1);
   clip: none;
   height: auto;
   overflow: auto;

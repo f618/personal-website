@@ -11,6 +11,7 @@ module.exports = (eleventyConfig) => {
     notify: true,
   });
 
+  eleventyConfig.addPassthroughCopy("src/posts");
   // Add plugin
   eleventyConfig.addPlugin(pluginRss);
 

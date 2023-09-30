@@ -1,16 +1,23 @@
 :root {
-  --background-color: #000000; /* BACKGROU|Nd */
-  --color-1: #f46825; /* heading text / highlight */
-  --color-2: #000000; /* footer background */
-  --color-black: #886f4e; /* body text */
-  --color-grey: #000000;
-  --border: #886f4e;  /*sub text*/
-  --border-hover: #f46825; /*sub text*/
-  --color-grey-dark: #6b583d;  /*sub text*/
-  --color-grey-light:#000000; /* arena background */
-  --color-white: #000000; /* arena tiles */
-  --font-small: 0.75rem;
-  --gutter: 1rem;
-  --line-height-small: 1.4;
+  /* Colors */
+  --background-color: #ffffff; /* Main background */
+  --color-1: #333333; /* Heading text / highlight - dark grey for contrast */
+  --color-2: #ffffff;; /* Footer background - very light grey */
+  --color-black: #4a4a4a; /* Body text - dark grey but not too dark */
+  --color-grey: #e0e0e0; /* Secondary or neutral background */
+  --border: #c8c8c8;  /* Subtext or secondary elements */
+  --border-hover: #999999; /* Hover effect for subtext or secondary elements */
+  --color-grey-dark: #888888;  /* Darker subtext */
+  --color-grey-light: #ffffff;; /* Arena background - almost white */
+  --color-white: #ffffff; /* Arena tiles */
 
+  /* Font & Sizing */
+  --font-regular: 1rem; /* Assuming default size is 1rem */
+  --font-small: 0.75rem;
+  --font-title: "Times New Roman", Times, serif; /* Serif font for titles */
+  --font-subtitle: "Times New Roman", Times, serif; /* Serif font for subtitles */
+
+  --gutter: 1rem;
+  --line-height-regular: 1.5; /* Assuming a regular line height */
+  --line-height-small: 1.4;
 }

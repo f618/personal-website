@@ -1,29 +1,8 @@
 <section class="section">
   <ul class="blocks">
-    {% for channel in arena %}
+    {% for image in arena %}
       <li class="block">
-        <a href="{{ channel.url }}" target="_blank" rel="noopener" class="block__link">
-          <span class="visually-hidden">View “{{ channel.title }}” channel on Arena</span>
-        </a>
-        <div class="block__content">
-          <p class="block__title">
-            {{ channel.title }}
-          </p>
-          {% if channel.description %}
-            <div class="block__desc">
-              {{  channel.description | markdownify | safe }}
-            </div>
-          {% endif %}
-          {% if channel.images %}
-            <div class="block__media">
-              {% for image in channel.images %}
-                <img src="{{ image }}" loading="lazy" height="60">
-              {% endfor %}
-            </div>
-          {% endif %}
-          <small>{{ channel.count }} {% if channel.count == 1 %}block{% else %}blocks{% endif %}</small>
-          <div class="block__arrow" aria-hidden="true">→</div>
-        </div>
+        <img src="{{ image }}" loading="lazy">
       </li>
     {% endfor %}
   </ul>

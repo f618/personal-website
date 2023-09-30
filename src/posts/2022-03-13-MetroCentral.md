@@ -2,9 +2,6 @@
 title: Metro Central Heights
 displayTitle: false
 tags: 
-- Personal Work
-- Platten Haus
-- Exhibition
 ---
 ![1](https://d2w9rnfcy7mm78.cloudfront.net/17810780/original_7687bba02ef44938c43166a7c78b8cf1.jpg?1661850043?bc=0)
 

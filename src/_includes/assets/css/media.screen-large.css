@@ -5,6 +5,7 @@
 
   .arena {
     background-color: var(--color-white);
+    overflow: visible; /* Added this to allow overflow */
   }
 
   .header--desktop {
@@ -37,11 +38,10 @@
   .home,
   .home body,
   .home main,
-  .arena,
   .arena body,
   .arena main {
     height: 100%;
-    overflow: hidden;
+    overflow: visible; /* Added this to allow overflow */
   }
 
   .home body > footer,
@@ -74,7 +74,7 @@
 
   .panel--profile,
   .panel--blocks {
-    height: 100%;
+    height: auto; /* Changed from 100% to auto */
     overflow: auto;
     -webkit-overflow-scrolling: touch;
   }

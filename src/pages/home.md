@@ -12,12 +12,12 @@ metaDescription: Designer
 #### Contact #####
 ##################
 name: Felix Taylor
-email: f3lixtaylor@pm.me
+email: mail@felixtaylor.net
 sameAs:
   - text: Arena
     url: https://www.are.na/felix-taylor
   - text: Instagram
-    url: https://www.instagram.com/f3lixtaylor/
+    url: https://www.instagram.com/platten__/
 
 ##################
 #### Activity ####
@@ -27,7 +27,7 @@ sameAs:
 ##################
 ###### Work ######
 ##################
-colleagues:
+Links:
   - name: Alexandra Margetic
     url: https://aa-m.co/
   - name: Alessia Acuri 
@@ -60,4 +60,4 @@ credits: |
   
 ---
 
-Industrial / interior designer in Berlin. Creator of [Platten Haus](https://www.instagram.com/platten.haus/). Formely designer and fabricator at [JAILMAKE](https://jailmake.com).
+I am a furniture and lighting designer based in Berlin, operating under the 'Platten' brand. I often collaborate within the art and design fields and provide my services on a freelance basis, specialising in technical production, particularly as a machinist and mechanical designer.

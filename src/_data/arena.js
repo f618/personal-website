@@ -1,84 +1,32 @@
-// The Arena channel ID
-const arenaChannelId = 839706;
-
-// Required package
 const Arena = require("are.na");
+const arenaChannelId = 839706;
+const maxImagesToShow = 15;
 
-const getArenaChannels = async channelId => {
-  // Set up the Arena instance
+const getRecentChannelImages = async (channelId) => {
   const arena = new Arena();
-  // Get the channel
-  let rootChannel = arena.channel(channelId);
-  // Set up base URL
-  let url = "https://are.na/";
-  // Set up number per page
-  const per = 60;
-  // Set up number of images per block
-  const imgPerBlock = 30;
-  // Get the channels
-  let channels = rootChannel
-    .get()
-    .then(async channel => {
-      // Add the user to the base URL
-      url = url + channel.user.slug + "/";
-      // Create a new array of channel contents
-      let reducedChannels = await Promise.all(
-        channel.contents
-          .filter(block => block.base_class == "Channel")
-          .map(async channel => {
-            // Set up the new channel object, somewhat reduced from the default
-            let newChannel = {
-              title: channel.title,
-              description: channel.metadata
-                ? channel.metadata.description
-                : null,
-              images: [],
-              count: channel.length,
-              url: url + channel.slug
-            };
+  let rootChannel = await arena.channel(channelId).get();
+  const channel = rootChannel.contents[0]; // Assuming this is the most recent channel
 
-            // Calculate the options based on the total pages
-            // NOTE If we could pass `sort_by` and / or `direction` to the opts, we would not need to do this
-            let totalPages = Math.ceil(channel.length / per);
-            let opts = { per: per };
-            // Loop through the pages backwards
-            for (let i = totalPages; i > 0; i--) {
-              // Stop looping through pages if we have enough images
-              if (newChannel.images.length > imgPerBlock) {
-                break;
-              }
-              // Set page to next
-              opts.page = i;
-              // Add some further content to the channel via its child blocks
-              newChannel = await arena
-                .channel(channel.id)
-                .contents(opts) // NOTE We’re manually getting the contents because channel.contents sometimes returns null
-                .then(contents => {
-                  // Get images within channel contents
-                  contents = contents
-                    .filter(b => b.image)
-                    .map(b => {
-                      return b.image.thumb.url;
-                    });
-                  // Add contents to images array
-                  newChannel.images = contents.concat(newChannel.images);
-                  // Return the channel with the additional image and description content
-                  return newChannel;
-                });
-            }
-            newChannel.images = newChannel.images.reverse();
+  let images = [];
+  const opts = {
+    per: maxImagesToShow,
+    sort: "position", // Sort by position (assumes newest images have the highest position)
+    direction: "desc", // Sort in descending order (newest first)
+  };
 
-            // Return the formatted channel object
-            return newChannel;
-          })
-      );
-      return reducedChannels.reverse();
-    })
-    .catch(err => {
-      console.log(err);
-      return null;
-    });
-  return await channels;
+  if (channel && channel.base_class === "Channel") {
+    const contents = await arena.channel(channel.id).contents(opts);
+    images = contents
+      .filter((b) => b.image)
+      .map((b) => b.image.display.url); // Use b.image.display.url or b.image.original.url for full-sized images
+  }
+
+  return images; // Images are returned in reverse chronological order (newest first).
 };
 
-module.exports = getArenaChannels(arenaChannelId);
+const retrievedImages = getRecentChannelImages(arenaChannelId);
+retrievedImages.then((images) => {
+  console.log("Retrieved Images:", images); // This will log the retrieved images in reverse chronological order (newest first).
+});
+
+module.exports = retrievedImages;

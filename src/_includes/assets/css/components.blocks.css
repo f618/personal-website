@@ -3,75 +3,26 @@
 }
 
 .block {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   background-color: var(--color-white);
   margin-bottom: var(--gutter);
-  padding: 1.2rem;
   position: relative;
-}
-
-.block__link {
-  border: 1px solid var(--border);
-  bottom: 0;
-  display: block;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.block__link:hover,
-.block__link:focus {  
-  border: 1px solid var(--border-hover);
-}
-
-.block__link:hover ~ .block__content .block__title,
-.block__link:focus ~ .block__content .block__title,
-.block__link:hover ~ .block__content small,
-.block__link:focus ~ .block__content small {
-  color: var(--color-1);
-}
-
-.block__link:hover ~ .block__content .block__arrow,
-.block__link:focus ~ .block__content .block__arrow {
-  color: var(--color-1);
-  display: block;
-}
-
-.block__desc {
-  display: none;
-  font-family: "Times New Roman", Times, serif;
-  font-size: var(--font-small);
-  line-height: var(--line-height-small);
-  color: var(--color-grey-dark);
-}
-
-.block__desc a {
-  text-decoration: none;
-}
-
-.block__desc a:focus {
-  border: 1px solid var(--color-1);
+  width: 100%;
+  display: flex;
+  align-items: left; /* centers children vertically */
+  justify-content: left; /* centers children horizontally */
+  height: auto; /* height of the block depends on its content */
 }
 
 .block__media {
-  overflow: hidden;
-  margin-bottom: 0.5rem;
-  margin-top: 0.5rem;
-  max-height: 3.75rem;
+  width: 100%; /* Ensures the media div takes up the full width of its parent */
+  display: flex;
+  align-items: center; /* centers children vertically */
+  justify-content: center; /* centers children horizontally */
 }
 
 .block__media img {
-  max-height: 3.75rem;
-  margin-bottom: 0.5rem;
-  margin-top: 0.5rem;
-}
-
-.block__arrow {
-  bottom: 0;
-  display: none;
-  padding: 0.5rem 1rem;
-  position: absolute;
-  right: 0;
-  transform: rotate(-45deg);
+  width: 100%; /* Ensures the image takes up the full width of its parent */
+  height: auto; /* height adjusts automatically to maintain the image's aspect ratio */
+  max-width: 100%; /* This will ensure the image doesn't overflow its container */
 }

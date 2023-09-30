@@ -3,62 +3,45 @@ section: arena
 ---
 <html class="{{ section }}" lang="{{ global.lang }}">
 
-  {% include "components/head.njk" %}
+{% include "components/head.njk" %}
 
-  <body class="has-panels">
+<body class="has-panels">
 
-    {% include "components/header.njk" %}
+{% include "components/header.njk" %}
 
-    <main id="main" class="main">
+<main id="main" class="main">
 
-      <div class="panel panel--blocks">
-        <div class="header header--panel" aria-hidden="true">
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                {% set linkUrl = '/arena/' %}
-                {% set linkText = 'Arena' %}
-                {% set current = true %}
-                {% include "components/nav-link.njk" %}
-              </li>
-              <li class="nav__item">
-                {% set linkUrl = '/projects/' %}
-                {% set linkText = 'projects' %}
-                {% set current = false %}
-                {% include "components/nav-link.njk" %}
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="panel-contents">
-          {% include "components/blocks.njk" %}
-        </div>
+  <div class="panel panel--blocks">
+    <div class="panel-contents image-gallery">
+      {% for image in images %}
+      <img src="{{ image }}" alt="">
+      {% endfor %}
+    </div>
+  </div>
+
+  <aside class="panel panel--profile" aria-hidden="true">
+    <article>
+      <header class="header header--panel">
+        {% set linkUrl = '/' %}
+        {% set linkText = global.siteTitle %}
+        {% set current = false %}
+        {% include "components/nav-link.njk" %}
+      </header>
+      <div class="panel-contents">
+        {% include "components/profile.njk" %}
       </div>
+      {% include "components/footer.njk" %}
+    </article>
+  </aside>
 
-      <aside class="panel panel--profile" aria-hidden="true">
-        <article>
-          <header class="header header--panel">
-            {% set linkUrl = '/' %}
-            {% set linkText = global.siteTitle %}
-            {% set current = false %}
-            {% include "components/nav-link.njk" %}
-          </header>
-          <div class="panel-contents">
-            {% include "components/profile.njk" %}
-          </div>
-          {% include "components/footer.njk" %}
-        </article>
-      </aside>
+</main>
 
-    </main>
+{% include "components/footer.njk" %}
 
-    {% include "components/footer.njk" %}
+<script>
+  hideFooter();
+</script>
 
-      <script>
-        hideFooter();
-      </script>
-
-  </body>
+</body>
 
 </html>
-

@@ -2,10 +2,6 @@
 title: Platten Haus Catalog 1 
 displayTitle: false
 tags: 
-- Platten Haus
-- Personal Work
-- Catalog
-- Publication
 ---
 ![1](https://d2w9rnfcy7mm78.cloudfront.net/17913528/original_159292234ea3901f3e8efbab19ac9b90.jpg?1662449999?bc=0)
 
