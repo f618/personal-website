@@ -4,6 +4,17 @@ html {
   background-color: var(--background-color);
 }
 
+.indented {
+  margin-left: 5rem;
+}
+@media (max-width: 768px) {
+  .indented {
+
+    margin-left: 0rem;
+  }
+}
+
+
 *,
 *::after,
 *::before {
