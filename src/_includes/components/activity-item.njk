@@ -22,24 +22,40 @@
     {%- endif -%}
   </time>
   <p>
-    {%- if a.data.type -%}
-      <span>{{ a.data.type }}</span>
-    {%- endif -%}
-    {%- if a.data.type and a.data.title -%}
-      ,&nbsp;
-    {%- endif -%}
+    {# Display Title (with URL if available) #}
     {%- if a.data.title -%}
       {%- if a.data.url -%}
-        <a href="{{ a.data.url }}">{{ a.data.title }}</a>
+        <a href="{{ a.data.url }}">{{ a.data.title }}</a><br>
       {%- else -%}
-        {{ a.data.title }}
+        {{ a.data.title }}<br>
       {%- endif -%}
     {%- endif -%}
-    {%- if a.data.location -%}
-      <br>{{ a.data.location }}
+    
+    {# Display Type #}
+    {%- if a.data.type -%}
+      {{ a.data.type }}
     {%- endif -%}
+    
+    {# Display Specific Location (with URL if available) immediately after Type if it exists #}
+    {%- if a.data.specificLocation -%}
+      , {{- ' ' -}}
+      {%- if a.data.specificLocationUrl -%}
+        <a href="{{ a.data.specificLocationUrl }}">{{ a.data.specificLocation }}</a><br>
+      {%- else -%}
+        {{ a.data.specificLocation }}<br>
+      {%- endif -%}
+    {%- else -%}
+      <br>
+    {%- endif -%}
+    
+    {# Display Subtext (e.g., Commission) #}
     {% if a.data.subtext %}
-      <br><span class="color-grey">{{ a.data.subtext | safe }}</span>
+      {{ a.data.subtext }}<br>
     {% endif %}
+    
+    {# Display General Location #}
+    {%- if a.data.location -%}
+      {{ a.data.location }}
+    {%- endif -%}
   </p>
 </li>

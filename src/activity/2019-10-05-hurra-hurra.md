@@ -1,10 +1,11 @@
 ---
-title: Building Alternatives
+title: Building Alternatives 1
 type: Workshop
-location: Hurra Hurra festival, Halle, DE
-subtext: as part of Evening Class
+specificLocation: Hurra Hurra Festival
+location: Halle, DE
+subtext: As part of Evening Class
 dateFormat: # "year", otherwise will be displayed MM.YYYY
 dateEnd: 2019-10-05
-dateStart:
 url: https://www.are.na/block/5179575
+specificLocationUrl: https://www.burg-halle.de/hurrahurra/
 ---

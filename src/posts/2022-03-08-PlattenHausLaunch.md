@@ -12,5 +12,3 @@ tags:
 ![4](https://d2w9rnfcy7mm78.cloudfront.net/17913532/original_7ece39999db4a6ee4dce862b37fdfeb6.jpg?1662450000?bc=0)
 
 ![5](https://d2w9rnfcy7mm78.cloudfront.net/17913529/original_e381ec4b0447c7f93f6eda3c98a1f14d.jpg?1662449999?bc=0)
-
-Catalogue 1 for Platten Haus; showcasing new works available for manufacture including a range of anodised aluminium plant pots, and two bed frames; one out of plywood, the other from aluminium and oak. Layout by [Michael Wallace](https://www.instagram.com/ateliermikey/).

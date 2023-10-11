@@ -1,10 +1,11 @@
 ---
 title: Decorative Art at Metro Central Heights
 type: Exhibition
-location: APT75, Metro Central Heights, London, UK
-subtext: solo show
+specificLocation: Metro Central Heights
+location: London, UK
+subtext: Solo Show
 dateFormat: # "year", otherwise will be displayed MM.YYYY
 dateEnd: 2022-03-11
-dateStart:
 url: /projects/metro-central-heights/
+specificLocationUrl: https://en.wikipedia.org/wiki/Metro_Central_Heights
 ---

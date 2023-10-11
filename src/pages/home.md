@@ -60,4 +60,4 @@ credits: |
   
 ---
 
-I am a furniture and lighting designer based in Berlin, operating under the 'Platten' brand. I often collaborate within the art and design fields and provide my services on a freelance basis, specialising in technical production, particularly as a machinist and mechanical designer.
+I am a furniture and lighting designer based in Berlin, operating under the 'Platten' brand. I often collaborate within the art and design fields and provide my services on a freelance basis, specialising in technical production, particularly as a machinist and mechanical designer. 

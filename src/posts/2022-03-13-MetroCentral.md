@@ -20,5 +20,3 @@ tags:
 ![7](https://d2w9rnfcy7mm78.cloudfront.net/16133920/original_c86590460ea56f4288d1ca7d22e07f16.jpg?1650450923?bc=0)
 
 ![8](https://d2w9rnfcy7mm78.cloudfront.net/16133923/original_33f77cd99fdb6d44f8df632a6bd5d356.jpg?1650450940?bc=0)
-
-Decorative Art at Metro Central Heights, a solo exhibition of new works for Platten Haus, found objects, and boxes made and mended between 2020-21. At APT47 in Metro Central Heights, formally the Ministry of Health, in Elephant and Castle, London UK. 
