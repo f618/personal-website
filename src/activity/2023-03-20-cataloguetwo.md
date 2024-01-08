@@ -5,6 +5,6 @@ specificLocation: Platten
 location: Berlin, DE
 dateFormat: # "year", otherwise will be displayed MM.YYYY
 dateEnd: 2023-03-20
-url: 
+url: /projects/platten-catalogue-2/
 specificLocationUrl: https://platten.haus/
 ---

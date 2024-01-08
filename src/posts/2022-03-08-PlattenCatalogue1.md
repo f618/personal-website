@@ -1,5 +1,5 @@
 ---
-title: Platten Haus Catalog 1 
+title: Platten Haus Catalogue 1 
 displayTitle: false
 tags: 
 ---
