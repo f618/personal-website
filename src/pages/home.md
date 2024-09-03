@@ -17,7 +17,7 @@ sameAs:
   - text: Arena
     url: https://www.are.na/felix-taylor
   - text: Instagram
-    url: https://www.instagram.com/platten__/
+    url: https://www.instagram.com/felixtaylorrip/
 
 ##################
 #### Activity ####
@@ -60,4 +60,4 @@ credits: |
   
 ---
 
-I am a furniture and lighting designer based in Berlin, operating under the 'Platten' brand. I often collaborate within the art and design fields and provide my services on a freelance basis, specialising in technical production, particularly as a machinist and mechanical designer. 
+I am an industrial designer based in Berlin, specialising in furniture and lighting design. I often collaborate across the art and design fields, offering freelance services focused on technical production, while operating under the brand ‘Platten’ for select projects.
