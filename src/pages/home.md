@@ -60,4 +60,4 @@ credits: |
   
 ---
 
-I am an industrial designer living in Berlin, specialising in furniture and lighting design. I often collaborate across the art and design fields, offering freelance services focused on technical production, while operating under the brand ‘Platten’ for select projects.
+I am an industrial designer living in Berlin, specialised in furniture and lighting design. I often collaborate across the art and design fields, offering freelance services focused on technical production, while operating under the brand ‘Platten’ for select projects.
